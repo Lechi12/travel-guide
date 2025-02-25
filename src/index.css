@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar Styles */
+/* Navbar Fix */
+.navbar {
+  background-color: #000 !important; /* Black background */
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: none; /* Remove any extra shadows */
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important; /* Yellow hover effect */
+}
+
+.navbar-toggler {
+  background-color: transparent !important;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* White mobile menu icon */
+}
+
+/* Fix White Overlay Issue */
+.container,
+.container-fluid {
+  background-color: transparent !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("https://source.unsplash.com/1600x900/?travel") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Destination Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #ffbb00;
+}
+
+/* Search Bar */
+.form-control {
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+}
+
+.form-control:focus {
+  border-color: #ffcc00;
+  box-shadow: none;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
